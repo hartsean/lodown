@@ -350,9 +350,11 @@ function every(collection, func) {
 module.exports.every = every;
 
 /** 
-* some: tests whether at least one element in the array passes the test implemented by the provided function.
-* and returns a Boolean value.  To be more specific, If the callback function returns even one "truthy" value, 
-* the output will return true. 
+* some: Tests whether at least one element in the array passes the test implemented by the provided function.
+* and returns a Boolean value.  To be more specific, if the callback function returns even one "truthy" value, 
+* the output will return true. Otherwise, it will return false. 
+* In other words, if there are no truthy results in the array it will return false.
+*
 * 
 * @param {Array or object): a collection to be searched an queries upon.
 * @param {A function}: func: a function to test the conditions of an array items truthiness and falseyness.
