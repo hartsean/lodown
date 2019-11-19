@@ -354,6 +354,9 @@ module.exports.every = every;
 * and returns a Boolean value.  To be more specific, if the callback function returns even one "truthy" value, 
 * the output will return true. Otherwise, it will return false. 
 * In other words, if there are no truthy results in the array it will return false.
+* If there is no callback function given. The result will be undefined. 
+* The callback's this value will be undefined unless an argument 
+* is given and a callback function specified. 
 *
 * 
 * @param {Array or object): a collection to be searched an queries upon.
